@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Anis Chacha 💛</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#100c20;color:#fff8f0;font-family:Georgia,'Times New Roman',serif;text-align:center}
+.hero{min-height:100vh;padding:65px 20px 55px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(circle at top,#80539a,#302047 52%,#100c20)}
+.kicker{font:12px Arial,sans-serif;letter-spacing:4px;text-transform:uppercase;color:#ffdda8}
+h1{font-size:clamp(42px,10vw,76px);line-height:1.05;margin:22px 0}
+h1 span{color:#ffdda8;font-style:italic}
+p{font:16px/1.85 Arial,sans-serif;color:#eee4f6}
+.hero p{max-width:570px}
+.btn{border:0;border-radius:999px;padding:15px 25px;margin-top:18px;background:#ffdda8;color:#2d1940;font-weight:bold;font-size:15px;cursor:pointer;box-shadow:0 8px 25px #0004}
+section{padding:65px 20px}
+.photo{background:#fff8f0;color:#352145}
+.photo h2,.surprise h2{font-size:clamp(28px,6vw,42px);margin:0 0 16px}
+.photo img{display:block;width:min(100%,430px);max-height:620px;object-fit:cover;object-position:center 52%;margin:25px auto 0;border-radius:22px;box-shadow:0 14px 40px #1c102433}
+.photo p{color:#5c4b67;max-width:650px;margin:0 auto}
+.surprise{background:linear-gradient(145deg,#57356f,#211536);min-height:330px}
+#letter{display:none;max-width:720px;margin:30px auto 0;padding:26px 24px;border:1px solid #ffdda877;border-radius:20px;background:#ffffff0b;text-align:left}
+#letter p{margin:10px 0}
+.signature{color:#ffdda8!important;font-weight:bold}
+footer{padding:24px 14px;background:#090712;color:#d9c9e8;font:13px Arial,sans-serif}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="kicker">A little surprise from home 💌</div>
+  <h1>Happy Birthday,<br><span>Anis Chacha!</span></h1>
+  <p>Even though you're far away in Dubai, you're always close to our hearts. This little page is a reminder that you're loved and missed so much.</p>
+  <div style="font-size:62px;margin:12px">🎂✨</div>
+  <button class="btn" onclick="document.getElementById('surprise').scrollIntoView({behavior:'smooth'})">There's a surprise for you ↓</button>
+</header>
+
+<section class="photo">
+  <h2>A special memory 📸</h2>
+  <p>Sending you birthday love all the way to Dubai!</p>
+  <img src="anis-chacha.jpg" alt="Anis Chacha standing by the sea">
+</section>
+
+<section class="surprise" id="surprise">
+  <h2>Open your birthday letter 🎁</h2>
+  <p>A little message, just for you…</p>
+  <button class="btn" onclick="openLetter()">Tap here for your surprise 💛</button>
+  <div id="letter">
+    <p><strong>Dear Anis Chacha,</strong></p>
+    <p>Happy Birthday! 🎂💛 We wish you so much happiness, good health, peace, and success. May Allah always protect you, bless your life with barakah, and make every step ahead easier and brighter.</p>
+    <p>We know you're far away from us in Dubai, and we miss having you close by. Please take good care of yourself, eat well, get enough rest, and don't work too hard. Stay safe, keep smiling, and remember that no matter how many miles are between us, you're always in our duas and in our hearts.</p>
+    <p>May this new year of your life bring beautiful opportunities, lots of laughter, and countless reasons to be grateful. We hope you feel extra loved today, because you truly are. Sending you the biggest hugs and all our love from home! 🫶✨</p>
+    <p><strong>Happy Birthday once again, Anis Chacha!</strong></p>
+    <p class="signature">Made with love by Tasmia Hassan 💛</p>
+  </div>
+</section>
+<footer>Made with lots of love by Tasmia Hassan for Anis Chacha · Happy Birthday! 🎈</footer>
+<script>
+function openLetter(){
+  var letter=document.getElementById("letter");
+  letter.style.display="block";
+  letter.scrollIntoView({behavior:"smooth",block:"center"});
+}
+</script>
+</body>
+</html>
